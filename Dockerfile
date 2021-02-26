@@ -4,7 +4,7 @@
 FROM nginx:latest
 
 # Adicionar index.html customizado no host do Github
-ADD https://github.com/eliezerdlr/Dockerfile/blob/master/index.html /usr/share/nginx/html/
+ADD https://raw.githubusercontent.com/eliezerdlr/Dockerfile/master/index.html /usr/share/nginx/html/
 
 # Adicinar leitura de permissao customizada no index.html
 RUN chmod +r /usr/share/nginx/html/index.html
